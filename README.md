@@ -2,7 +2,7 @@
 
 ## Systems and Toolchains Course Project – Option 1
 
-Contributors: Jiayi Liu & Kitiyaporn Takham
+Contributors: Jiayi Liu(andrew ID: ) & Kitiyaporn Takham(andrew ID: ktakham)
 
 ### Dataset
 In this project, we use FIFA Dataset available on Kaggle https://www.kaggle.com/stefanoleone992/fifa-22-complete-player-dataset/.
