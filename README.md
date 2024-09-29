@@ -119,7 +119,6 @@ This dataset contains Soccer player statistics for 2015-2022. Male player data s
 - nation_logo_url: URL of the national team logo
 - nation_flag_url: URL of the national flag
 
-> [!NOTE]
 > ### :speech_balloon: The benefit of using PostgreSQL DB table compared to a NoSQL Database in this project
 >  - excel at combing tables with similar features using JOIN and UNION operations
 >  - allowing better organization, and validation of data which means that we can separate the big table into samll tables and relate them with the key
