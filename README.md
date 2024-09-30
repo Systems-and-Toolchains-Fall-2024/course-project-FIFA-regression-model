@@ -148,10 +148,12 @@ This dataset contains Soccer player statistics for 2015-2022. Male player data s
   </details>
 
 **Question 2**
-- Defined function `...` to finish the task of "list the X clubs with the highest (or lowest) average player age for a given year Y"
-  - input required: club ranking as `X`, year as `Y`, option to choose from highest ranking or lowest ranking as `filter`
+- Defined function `top_avg_age_clubs(X, Y, filter)` to finish the task of "list the X clubs with the highest (or lowest) average player age for a given year Y"
+  - input required: club ranking as `X`, year as `Y`, option to choose from "highest" or "lowest" ranking as `filter`
   - output: list of `X` clubs with the `filter` average player age for a given year `Y`
 
 **Question 3**
+>[!WARNING]
+> need to create a function with finding max-min year automatically
 - Defined function `...` to illustract the most popular nationality in the dataset for each year
   
