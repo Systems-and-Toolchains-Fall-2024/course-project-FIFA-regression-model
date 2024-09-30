@@ -7,7 +7,11 @@ Contributors: Jiayi Liu(andrew ID: jiayili5) & Kitiyaporn Takham(andrew ID: ktak
 ### Dataset
 In this project, we use FIFA Dataset available on Kaggle https://www.kaggle.com/stefanoleone992/fifa-22-complete-player-dataset/.
 This dataset contains Soccer player statistics for 2015-2022. Male player data start in 2015 while Female player statistics start in 2016.
+
 #### Features (110 features)
+<details> 
+<summary> Expanded </summary>
+
 - sofifa_id: player unique key 
 - player_url: player information link
 - short_name: player short name
@@ -118,18 +122,36 @@ This dataset contains Soccer player statistics for 2015-2022. Male player data s
 - club_flag_url: URL of the club nationality flag
 - nation_logo_url: URL of the national team logo
 - nation_flag_url: URL of the national flag
+</details>
 
 > ### :speech_balloon: The benefit of using PostgreSQL DB table compared to a NoSQL Database in this project
 >  - excel at combing tables with similar features using JOIN and UNION operations
 >  - allowing better organization, and validation of data which means that we can separate the big table into samll tables and relate them with the key
 >  - better supporting complex SQL queries than NoSQL DB
 
-### Steps and Notes for running project.ipynb
-**Task I**
-- All of 15 .csv data files with 110 orginal features & 1 column of 'year'has been uploaded in Postgres table named fifa'
+## Steps and Notes for running project.ipynb
+### Task I
+- All of 15 .csv data files with 110 original features & 1 column of `year` has been uploaded in the Postgres table named `fifa`
 - Total male+female players: 144323 (distinct w.r.t. 111 features)
 
-**Task II - Q1**
-- Defined function 'query_no_clubs(X, Z)' to finish the task of "finding the number of clubs that has the highest number of players in year X with contracts ending in year Z'
-- Possible value for year X: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022]
-- Possible value for contract ending year Z (hold the value of 2023 or after): [2031, 2026, 2028, 2025, 2023, 2024, 2027]
+### Task II
+**Question 1**
+- Defined function `query_no_clubs(X, Z)` to finish the task of "finding the number of Y clubs that has the highest number of players in year X with contracts ending in year Z"
+  - input required: year as `X`, year of a contract ending as `Z`
+  - output: the number of `Y` clubs that have the highest number of players in year `X` with contracts ending in year `Z`
+    
+  <details> 
+  <summary> Function testing </summary>
+    
+  - Possible value for year X: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022]
+  - Possible value for contract ending year Z (hold the value of 2023 or after): [2031, 2026, 2028, 2025, 2023, 2024, 2027]
+  </details>
+
+**Question 2**
+- Defined function `...` to finish the task of "list the X clubs with the highest (or lowest) average player age for a given year Y"
+  - input required: club ranking as `X`, year as `Y`, option to choose from highest ranking or lowest ranking as `filter`
+  - output: list of `X` clubs with the `filter` average player age for a given year `Y`
+
+**Question 3**
+- Defined function `...` to illustract the most popular nationality in the dataset for each year
+  
