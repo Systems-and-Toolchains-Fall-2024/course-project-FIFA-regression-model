@@ -153,7 +153,7 @@ This dataset contains Soccer player statistics for 2015-2022. Male player data s
   - output: list of `X` clubs with the `filter` average player age for a given year `Y`
 
 **Question 3**
->[!WARNING]
-> need to create a function with finding max-min year automatically
-- Defined function `...` to illustract the most popular nationality in the dataset for each year
+- Defined function `display_popular_nation()` to illustract the most popular nationality in the dataset for each year
+  - input: nothing
+  - output: list of popular nationality for each year
   
