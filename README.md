@@ -137,7 +137,7 @@ This dataset contains Soccer player statistics for 2015-2022. Male player data s
 ### Task II
 **Question 1**
 - Defined function `query_no_clubs(X, Z)` to finish the task of "finding the number of Y clubs that has the highest number of players in year X with contracts ending in year Z"
-  - input required: year as `X`, year of a contract ending as `Z`
+  - input required: year as `X`, the number of clubs that want to display as `Y`, year of a contract ending as `Z`
   - output: the number of `Y` clubs that have the highest number of players in year `X` with contracts ending in year `Z`
     
   <details> 
