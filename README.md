@@ -131,10 +131,13 @@ This dataset contains Soccer player statistics for 2015-2022. Male player data s
 
 ## Steps and Notes for running project.ipynb
 ### Task I
-- All of 15 .csv data files with 110 original features & 1 column of `year` has been uploaded in the Postgres table named `fifa`
+- All of 15 .csv data files with 110 original features & 2 columns of `year` and `gender` have been uploaded in the Postgres table named `fifa`
 - Total male+female players: 144323 (distinct w.r.t. 111 features)
 
 ### Task II
+
+*Note:* "use only male player data for your analysis tasks (Tasks 2 and 3)"
+
 **Question 1**
 - Defined function `query_no_clubs(X, Y, Z)` to finish the task of "find the Y clubs with the highest number of players in year X with contracts ending in year Z"
   - input required: year as `X`, the number of clubs (positive integer) that want to display as `Y`, year of a contract ending as `Z`
