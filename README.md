@@ -166,7 +166,7 @@ This dataset contains Soccer player statistics for 2015-2022. Male player data s
   **Preprocessing**
 
 - player_position,club_name,preferred_foot -> one-hot
-- club_contract_valid_until - club_joined -> contact time period
+- club_contract_valid_until - club_joined -> contact time period 
 - work_rate -> split into attacking / defensive and change to (1-low,2-medium,3-high)
 
 - drop these columns
@@ -174,6 +174,7 @@ sofifa_id
 player_url
 short_name
 long_name
+club_name
 club_postion
 dob
 club_team_id
@@ -218,10 +219,31 @@ rcb: player that is playing as RCB
 rb: player that is playing as RB
 gk: player that is playing as GK
 player_face_url
-cub_logo_url
+club_logo_url
 club_flag_url
 nation_logo_url
 nation_flag_url
+year
+gender
 
 
+- drop the rows with NULL
+value_eur', 
+
+- medium:
+'wage_eur', 'league_level', ‘pace’,’pace', 'shooting', 'passing', 'dribbling', 'defending', 'physic', 'mentality_composure', 
+
+- 0:
+'goalkeeping_speed', 'contract_duration'
   
+### Regression trainig
+
+- Spark version
+
+  - linear regression
+  - decision tree
+
+- Pytorch version
+
+  - linear regression
+  - MLP
