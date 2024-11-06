@@ -164,110 +164,109 @@ This dataset contains Soccer player statistics for 2015-2022. Male player data s
 
 #### Data Cleaning and Preprocessing
 
-**Prediction target:** `value_eur`
+Prediction target: `value_eur`
 
-**Columns Analysis**
+ - **Columns Analysis**
 
-- player_position,club_name,preferred_foot -> one-hot
-- club_contract_valid_until - club_joined -> contact time period 
-- work_rate -> split into attacking / defensive -> one-hot
-- drop columns that are not of interest
+    - player_position,club_name,preferred_foot -> one-hot
+    - club_contract_valid_until - club_joined -> contact time period 
+    - work_rate -> split into attacking / defensive -> one-hot
+    - drop columns that are not of interest
+    
+      <details> 
+      <summary> Expanded </summary>
+      
+      sofifa_id
+      
+      player_url
+      
+      short_name
+      
+      long_name
+      
+      club_name
+      
+      club_postion
+      
+      dob
+      club_team_id
+      
+      leuage_name
+      
+      club_jersey_number
+      
+      club_loaned_from
+      
+      nationality_id
+      
+      nationality_name
+      
+      nationality_team_id
+      
+      nation_position
+      
+      nation_jersey_name
+      
+      body_type  *Note: dataset has height&weight*
+      
+      real_face
+      
+      release_clause_eur
+      
+      player_tags
+      
+      player_traits
+      
+      ls: player that is playing as LS
+      st: player that is playing as ST
+      rs: player that is playing as RS
+      lw: player that is playing as LW
+      lf: player that is playing as LF
+      cf: player that is playing as CF
+      rf: player that is playing as RF
+      rw: player that is playing as RW
+      lam: player that is playing as LAM
+      cam: player that is playing as CAM
+      ram: player that is playing as RAM
+      lm: player that is playing as LM
+      lcm: player that is playing as LCM
+      cm: player that is playing as CM
+      rcm: player that is playing as RCM
+      rm: player that is playing as RM
+      lwb: player that is playing as LWB
+      ldm: player that is playing as LDM
+      cdm: player that is playing as CDM
+      rdm: player that is playing as RDM
+      rwb: player that is playing as RWB
+      lb: player that is playing as LB
+      lcb: player that is playing as LCB
+      cb: player that is playing as CB
+      rcb: player that is playing as RCB
+      rb: player that is playing as RB
+      gk: player that is playing as GK
+      
+      player_face_url
+      
+      club_logo_url
+      
+      club_flag_url
+      
+      nation_logo_url
+      
+      nation_flag_url
+      
+      year
+      
+      gender
+      </details> 
 
-<details> 
-<summary> Expanded </summary>
+- **Handle missing value**
 
-sofifa_id
-
-player_url
-
-short_name
-
-long_name
-
-club_name
-
-club_postion
-
-dob
-club_team_id
-
-leuage_name
-
-club_jersey_number
-
-club_loaned_from
-
-nationality_id
-
-nationality_name
-
-nationality_team_id
-
-nation_position
-
-nation_jersey_name
-
-body_type  *Note: dataset has height&weight*
-
-real_face
-
-release_clause_eur
-
-player_tags
-
-player_traits
-
-ls: player that is playing as LS
-st: player that is playing as ST
-rs: player that is playing as RS
-lw: player that is playing as LW
-lf: player that is playing as LF
-cf: player that is playing as CF
-rf: player that is playing as RF
-rw: player that is playing as RW
-lam: player that is playing as LAM
-cam: player that is playing as CAM
-ram: player that is playing as RAM
-lm: player that is playing as LM
-lcm: player that is playing as LCM
-cm: player that is playing as CM
-rcm: player that is playing as RCM
-rm: player that is playing as RM
-lwb: player that is playing as LWB
-ldm: player that is playing as LDM
-cdm: player that is playing as CDM
-rdm: player that is playing as RDM
-rwb: player that is playing as RWB
-lb: player that is playing as LB
-lcb: player that is playing as LCB
-cb: player that is playing as CB
-rcb: player that is playing as RCB
-rb: player that is playing as RB
-gk: player that is playing as GK
-
-player_face_url
-
-club_logo_url
-
-club_flag_url
-
-nation_logo_url
-
-nation_flag_url
-
-year
-
-gender
-
-<details> 
-
-**Handle missing value**
-
-- value_eur: drop the rows with "NULL" 
-
-- wage_eur, league_level, pace, shooting, passing, dribbling, defending, physic, mentality_composure: fill missing vale with medium value  
-
-- goalkeeping_speed, contract_duration: fill missing value with "0"
+  - value_eur: drop the rows with "NULL" 
+  
+  - wage_eur, league_level, pace, shooting, passing, dribbling, defending, physic, mentality_composure: fill missing vale with medium value  
+  
+  - goalkeeping_speed, contract_duration: fill missing value with "0"
   
 #### Regression training
 
