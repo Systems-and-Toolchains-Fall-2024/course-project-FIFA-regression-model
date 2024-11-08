@@ -303,21 +303,53 @@ Prediction target: `value_eur`
   
 #### Modeling (Regression)
 
-> ### :speech_balloon: Explain why you chose the classifiers/regressors and provide comments on the impact of the tunable parameters on the accuracy. Also, compare the selected models.
-> 
+> ### :speech_balloon: Explain why you chose the classifiers/regressors
 > **Answer:** Because the prediction target is a value of player in EUR (numerical), the models should be regression models.
 
 - **SparkML version**
 
-  - Linear Regression
+  - **Linear Regression**
 
-    Experiment on:
+    Experiment on: regParam, maxIter
+
+    - if the model has high regularization (regParam = 100) and minimal iteration, the model is simple and less flexible resulting in underfitting.
+
+    - if the model does not have regularization (regParam = 0) and maximal iteration, the model fully fits the data resulting in overfitting.
     
-    Results:
+    **Results: MSE of test = 0.427**
     
-  - Random Forest Regression
+  - **Random Forest Regression**
+ 
+    Experiment on: maxDepth, numTrees
+ 
+    - if the model is too small in-depth and has fewer trees, the model is simple resulting in underfitting.
+
+    - if the model is too deep and has more trees, the model is complex resulting in overfitting.
+    
+    **Results: MSE of test = 0.079**
 
 - **Pytorch version**
 
-  - Linear Regression
-  - MLP
+  - **Linear Regression**
+ 
+    Experiment on: learning rate, epochs
+    
+    - if the model has a small learning rate with large epochs, it may stuck into the local minimum
+    - if the model has a larger learning rate with small epochs, in our experiment, the model gets a smaller loss than a smaller learning rate
+    
+    **Results: MSE of test = 0.451**
+    
+  - **MLP**
+ 
+    Experiment on: learning rate, epochs
+ 
+    - We changed the lr and number of epochs together and found for our MLP model, a smaller lr=0.01 with larger epochs=2000 gives the best result.
+    
+    **Results: MSE of test = 0.158**
+
+  > **Summary**
+  > 
+  > The Random Forest model in SparkML is the best model for this data with the lowest MSE loss at 0.079, followed by the MLP model in Pytorch with 0.158 and Linear Regression in SparkML and in Pytorch for 0.427 and 0.451 respectively.
+  
+
+  
