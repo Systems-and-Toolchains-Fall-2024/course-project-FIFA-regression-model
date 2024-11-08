@@ -162,11 +162,11 @@ This dataset contains Soccer player statistics for 2015-2022. Male player data s
 
 ### Task III
 
-#### Data Cleaning and Preprocessing
+#### Data Engineering
 
 Prediction target: `value_eur`
 
- - **Columns Analysis**
+ - **Data Cleaning & Data Preprocessing**
 
     - player_position,club_name,preferred_foot -> one-hot
     - club_contract_valid_until - club_joined -> contact time period 
@@ -260,22 +260,27 @@ Prediction target: `value_eur`
       gender
       </details> 
 
-- **Handle missing value**
+  - **Handle missing value**
 
-  - value_eur: drop the rows with "NULL" 
+    - value_eur: drop the rows with "NULL" 
+    
+    - wage_eur, league_level, pace, shooting, passing, dribbling, defending, physic, mentality_composure: fill missing vale with medium value  
+    
+    - goalkeeping_speed, contract_duration: fill missing value with "0"
   
-  - wage_eur, league_level, pace, shooting, passing, dribbling, defending, physic, mentality_composure: fill missing vale with medium value  
-  
-  - goalkeeping_speed, contract_duration: fill missing value with "0"
-  
-#### Regression training
+#### Modeling (Regression)
 
-- Spark version
+- **SparkML version**
 
   - linear regression
-  - decision tree
+  - redom forest regression
 
-- Pytorch version
+- **Pytorch version**
 
   - linear regression
   - MLP
+
+
+> [Note] explain why you chose the classifiers/regressors and
+> provide comments on the impact of the tunable parameters on the
+> accuracy. Also, compare the selected models
