@@ -5,7 +5,7 @@
 Contributors: Jiayi Liu(andrew ID: jiayili5) & Kitiyaporn Takham(andrew ID: ktakham)
 
 ### Dataset
-In this project, we use FIFA Dataset available on Kaggle https://www.kaggle.com/stefanoleone992/fifa-22-complete-player-dataset/.
+In this project, we use FIFA Dataset available on Kaggle [here](https://www.kaggle.com/stefanoleone992/fifa-22-complete-player-dataset/).
 This dataset contains Soccer player statistics for 2015-2022. Male player data start in 2015 while Female player statistics start in 2016.
 
 #### Features (110 features)
@@ -130,6 +130,12 @@ This dataset contains Soccer player statistics for 2015-2022. Male player data s
 >  - better supporting complex SQL queries than NoSQL DB
 
 ## Steps and Notes for running project.ipynb
+
+**Table of contents**
+- [Task I](#task-i)
+- [Task II](#task-ii)
+- [Task III](#task-iii)
+
 ### Task I
 - All of 15 .csv data files with 110 original features & 2 columns of `year` and `gender` have been uploaded in the Postgres table named `fifa`
 - Total male+female players: 144323 (distinct w.r.t. 111 features)
@@ -189,6 +195,7 @@ Prediction target: `value_eur`
       club_postion
       
       dob
+      
       club_team_id
       
       leuage_name
@@ -207,7 +214,7 @@ Prediction target: `value_eur`
       
       nation_jersey_name
       
-      body_type  *Note: dataset has height&weight*
+      body_type  **Note: dataset has height&weight**
       
       real_face
       
@@ -217,33 +224,59 @@ Prediction target: `value_eur`
       
       player_traits
       
-      ls: player that is playing as LS
-      st: player that is playing as ST
-      rs: player that is playing as RS
-      lw: player that is playing as LW
-      lf: player that is playing as LF
-      cf: player that is playing as CF
-      rf: player that is playing as RF
-      rw: player that is playing as RW
-      lam: player that is playing as LAM
-      cam: player that is playing as CAM
-      ram: player that is playing as RAM
-      lm: player that is playing as LM
-      lcm: player that is playing as LCM
-      cm: player that is playing as CM
-      rcm: player that is playing as RCM
-      rm: player that is playing as RM
-      lwb: player that is playing as LWB
-      ldm: player that is playing as LDM
-      cdm: player that is playing as CDM
-      rdm: player that is playing as RDM
-      rwb: player that is playing as RWB
-      lb: player that is playing as LB
-      lcb: player that is playing as LCB
-      cb: player that is playing as CB
-      rcb: player that is playing as RCB
-      rb: player that is playing as RB
-      gk: player that is playing as GK
+      ls
+      
+      st
+      
+      rs
+      
+      lw
+      
+      lf
+      
+      cf
+      
+      rf
+      
+      rw
+      
+      lam
+      
+      cam
+      
+      ram
+      
+      lm
+      
+      lcm
+      
+      cm
+      
+      rcm
+      
+      rm
+      
+      lwb
+      
+      ldm
+      
+      cdm
+      
+      rdm
+      
+      rwb
+      
+      lb
+      
+      lcb
+      
+      cb
+      
+      rcb
+      
+      rb
+      
+      gk
       
       player_face_url
       
@@ -270,17 +303,21 @@ Prediction target: `value_eur`
   
 #### Modeling (Regression)
 
+> ### :speech_balloon: Explain why you chose the classifiers/regressors and provide comments on the impact of the tunable parameters on the accuracy. Also, compare the selected models.
+> 
+> **Answer:** Because the prediction target is a value of player in EUR (numerical), the models should be regression models.
+
 - **SparkML version**
 
-  - linear regression
-  - redom forest regression
+  - Linear Regression
+
+    Experiment on:
+    
+    Results:
+    
+  - Random Forest Regression
 
 - **Pytorch version**
 
-  - linear regression
+  - Linear Regression
   - MLP
-
-
-> [Note] explain why you chose the classifiers/regressors and
-> provide comments on the impact of the tunable parameters on the
-> accuracy. Also, compare the selected models
