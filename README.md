@@ -135,6 +135,7 @@ This dataset contains Soccer player statistics for 2015-2022. Male player data s
 - [Task I](#task-i)
 - [Task II](#task-ii)
 - [Task III](#task-iii)
+- [Task VI](#task-vi)
 
 ### Task I
 - All of 15 .csv data files with 110 original features & 2 columns of `year` and `gender` have been uploaded in the Postgres table named `fifa`
@@ -351,5 +352,7 @@ Prediction target: `value_eur`
   > 
   > The Random Forest model in SparkML is the best model for this data with the lowest MSE loss at 0.079, followed by the MLP model in Pytorch with 0.158 and Linear Regression in SparkML and in Pytorch for 0.427 and 0.451 respectively.
   
+### Task VI
 
+Deploy 3 tasks above on the Cloud
   
