@@ -355,4 +355,7 @@ Prediction target: `value_eur`
 ### Task VI
 
 Deploy 3 tasks above on the Cloud will refer to cloud running video & project_on_cloud.ipynb
-  
+
+> **Summary**
+> 
+> Training models on cloud gives different loss values to local training for each models. However, the random forest model with SparkML still be the best model with the different ranking; MLP with Pytorch, linear regression with SparkML, and Linear regrssion with Pytorch respectively.
