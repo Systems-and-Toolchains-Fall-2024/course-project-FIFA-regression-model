@@ -4,6 +4,11 @@
 
 Contributors: Jiayi Liu(andrew ID: jiayili5) & Kitiyaporn Takham(andrew ID: ktakham)
 
+**walkthrough videos:** 
+- [cloud_walkthrough](https://www.dropbox.com/scl/fi/aj3daxi994r1bgtzrrx7b/walkthrough_cloud.mov?rlkey=ud9mq4ca3meb3938usfi6gq8x&st=h06glo4o&dl=0)
+- [local_walkthrough](https://www.dropbox.com/scl/fi/uqksf4d3bswonlmyqhq5k/walkthrough_local.mov.mp4?rlkey=4x1r1bopar7zecc300wymceo5&st=mmpgso9r&dl=0)
+                        
+
 ### Dataset
 In this project, we use FIFA Dataset available on Kaggle [here](https://www.kaggle.com/stefanoleone992/fifa-22-complete-player-dataset/).
 This dataset contains Soccer player statistics for 2015-2022. Male player data start in 2015 while Female player statistics start in 2016.
@@ -352,7 +357,7 @@ Prediction target: `value_eur`
   > 
   > The Random Forest model in SparkML is the best model for this data with the lowest MSE loss at 0.079, followed by the MLP model in Pytorch with 0.158 and Linear Regression in SparkML and in Pytorch for 0.427 and 0.451 respectively.
   
-### Task VI
+### Task IV
 
 Deploy 3 tasks above on the Cloud will refer to cloud running video & project_on_cloud.ipynb
 
