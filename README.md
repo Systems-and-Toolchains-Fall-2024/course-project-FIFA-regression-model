@@ -7,7 +7,9 @@ Contributors: Jiayi Liu(andrew ID: jiayili5) & Kitiyaporn Takham(andrew ID: ktak
 **walkthrough videos:** 
 - [cloud_walkthrough](https://www.dropbox.com/scl/fi/aj3daxi994r1bgtzrrx7b/walkthrough_cloud.mov?rlkey=ud9mq4ca3meb3938usfi6gq8x&st=h06glo4o&dl=0)
 - [local_walkthrough](https://www.dropbox.com/scl/fi/uqksf4d3bswonlmyqhq5k/walkthrough_local.mov.mp4?rlkey=4x1r1bopar7zecc300wymceo5&st=mmpgso9r&dl=0)
-                        
+
+**demo videos:** 
+- [cloud demo](https://www.dropbox.com/scl/fi/jsz8aimzclr64864vwy17/running_on_cloud.mov?rlkey=yq5zem09uirkjzqm37oui3m53&st=kpas6e7m&dl=0)
 
 ### Dataset
 In this project, we use FIFA Dataset available on Kaggle [here](https://www.kaggle.com/stefanoleone992/fifa-22-complete-player-dataset/).
