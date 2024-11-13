@@ -354,5 +354,5 @@ Prediction target: `value_eur`
   
 ### Task VI
 
-Deploy 3 tasks above on the Cloud
+Deploy 3 tasks above on the Cloud will refer to cloud running video & project_on_cloud.ipynb
   
