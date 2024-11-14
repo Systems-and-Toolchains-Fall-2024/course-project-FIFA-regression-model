@@ -144,7 +144,8 @@ This dataset contains Soccer player statistics for 2015-2022. Male player data s
 - [Task I](#task-i)
 - [Task II](#task-ii)
 - [Task III](#task-iii)
-- [Task VI](#task-vi)
+- [Task IV](#task-iv)
+- [Bonus](#bonus)
 
 ### Task I
 - All of 15 .csv data files with 110 original features & 2 columns of `year` and `gender` have been uploaded in the Postgres table named `fifa`
@@ -368,3 +369,11 @@ Deploy 3 tasks above on the Cloud will refer to cloud running video & project_on
 > **Summary**
 > 
 > Training models on cloud gives different loss values to local training for each models. However, the random forest model with SparkML still be the best model with the different ranking; MLP with Pytorch, linear regression with SparkML, and Linear regrssion with Pytorch respectively.
+
+### Bonus
+
+Run the PostgreSQL on the cloud:
+
+> Code: bonus.ipynb
+> 
+> Explanation and code running recording: Bonus walkthrough & Bonus demo videos
